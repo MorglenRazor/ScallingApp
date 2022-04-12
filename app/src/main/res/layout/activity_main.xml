@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <SeekBar
+        android:id="@+id/seekBarScalling"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextMax"
+        android:layout_marginBottom="50dp"
+        />
+
+
+    <TextView
+        android:id="@+id/textTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="35dp"
+        android:text="Before: "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.686" />
+
+    <TextView
+        android:id="@+id/textTest2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="35dp"
+        android:text="After: "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.512" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="От"
+        app:layout_constraintEnd_toStartOf="@id/editTextNumber"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="35dp"
+        />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberSigned"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="30dp"
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="38dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="До"
+        app:layout_constraintEnd_toStartOf="@id/editTextMax"
+        app:layout_constraintTop_toTopOf="@id/editTextMax"
+        app:layout_constraintBottom_toBottomOf="@id/editTextMax"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="35dp"
+        />
+
+    <EditText
+        android:id="@+id/editTextMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberSigned"
+        app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/editTextNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="30dp"
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="38dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Min"
+        app:layout_constraintBottom_toTopOf="@id/editTextScallMin"
+        app:layout_constraintStart_toStartOf="@id/editTextScallMin"
+        app:layout_constraintEnd_toEndOf="@id/editTextScallMin"
+        android:layout_margin="35dp"
+        />
+
+    <EditText
+        android:id="@+id/editTextScallMin"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberSigned"
+        app:layout_constraintTop_toBottomOf="@id/editTextMax"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/seekBarScalling"
+        android:layout_margin="30dp"
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="38dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Max"
+        app:layout_constraintBottom_toTopOf="@id/editTextScallMax"
+        app:layout_constraintStart_toStartOf="@id/editTextScallMax"
+        app:layout_constraintEnd_toEndOf="@id/editTextScallMax"
+        android:layout_margin="35dp"
+        />
+
+    <EditText
+        android:id="@+id/editTextScallMax"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberSigned"
+        app:layout_constraintTop_toBottomOf="@id/editTextMax"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/seekBarScalling"
+        android:layout_margin="30dp"
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="38dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
